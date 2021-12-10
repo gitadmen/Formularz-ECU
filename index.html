@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie domowe - Formularz HTML5</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <!-- Zadanie domowe zrob z wykorzystaniem serwisu https://formspree.io -->
+    
+    <form action="" method="POST">
+
+        <div class="column">
+
+            <h3>Dane teleadresowe zleceniodawcy:</h3>
+
+            <label for="name">Imię:</label>
+            <input type="text" name="name" id="name" required>
+    
+            <br>
+            <label for="lastname">Nazwisko:</label>
+            <input type="text" name="lastname" id="lastname" required>
+    
+            <br>
+            <label for="phone">Telefon:</label>
+            <input type="tel" name="phone" id="phone" required minlength="9">
+    
+            <br>
+            <label for="mail">E-mail:</label>
+            <input type="email" name="_replyto" id="mail" required>
+    
+            <br>
+            <label for="street">Ulica i numer</label>
+            <input type="adress" name="adress" id="street" required>
+    
+            <br>
+            <label for="zip">Kod pocztowy:</label>
+            <input type="zip" name="zip" id="zip" required minlength="6">
+    
+            <br>
+            <label for="city">Miasto</label>
+            <input type="adress" name="city" id="city" required>
+    
+    
+        </div>
+
+        <div class="column">
+
+            <h3>Dane pojazdu i opis usterki</h3>
+            <label for="brand">Marka pojazdu:</label>
+            <input type="text" name="brand" id="brand" required>
+    
+            <br>
+            <label for="model">Model:</label>
+            <input type="text" name="model" id="model" required>
+    
+            <br>
+            <label for="year">Rok produkcji/wersja:</label>
+            <input type="number" name="year" id="year" required >
+    
+            <br>
+            <label for="enginepower">Moc silnika:</label>
+            <input type="text" name="power" id="enginepower" >
+
+            
+    
+        </div>
+
+        <div class="column">
+
+            <p>Możliwość nawiązania komunikacji z komputerem silnika poprzez diagnoskop?</p>
+
+            <label><input type="radio" name="choise" required> Tak</label>
+            <label><input type="radio" name="choise" required> Nie</label>
+            <label><input type="radio" name="choise" required> Inne:</label>
+            
+            <p>Silnik daje się uruchomić?</p>
+
+            <label><input type="radio" name="choise" required> Tak</label>
+            <label><input type="radio" name="choise" required> Nie</label>
+            <label><input type="radio" name="choise" required> Inne:</label>
+    
+            <label for="message"> Inne:</label>
+            <textarea name="message" id="message"></textarea>
+
+            <label for="name">Imię:</label>
+            <input type="text" name="name" id="name" required>
+    
+            <br>
+            <label for="lastname">Nazwisko:</label>
+            <input type="text" name="lastname" id="lastname" required>
+    
+            <br>
+            <label for="phone">Telefon:</label>
+            <input type="tel" name="phone" id="phone" required minlength="9">
+    
+            <br>
+            <label for="mail">E-mail:</label>
+            <input type="email" name="_replyto" id="mail" required>
+    
+            <br>
+            <label for="street">Ulica i numer</label>
+            <input type="adress" name="adress" id="street" required>
+    
+            <br>
+            <label for="zip">Kod pocztowy:</label>
+            <input type="zip" name="zip" id="zip" required minlength="6">
+    
+            <br>
+            <label for="city">Miasto</label>
+            <input type="adress" name="city" id="city" required>
+    
+            <br>
+            <label for="message">Wiadomość: </label>
+            <textarea name="message" id="message"></textarea>
+    
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">Zapoznałem się z regulaminem usług i zgadzam się na warunki w nim zawarte</label>
+            
+            <br>
+            <input type="submit" value="Send">
+        
+    </form>
+</body>
+
+</html>
