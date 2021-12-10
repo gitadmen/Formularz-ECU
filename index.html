@@ -12,8 +12,6 @@
 </head>
 
 <body>
-   
-    <!-- Zadanie domowe zrob z wykorzystaniem serwisu https://formspree.io -->
     
     <form action="" method="POST">
 
@@ -48,7 +46,6 @@
             <label for="city">Miasto</label>
             <input type="adress" name="city" id="city" required>
     
-    
         </div>
 
         <div class="column">
@@ -69,34 +66,48 @@
             <label for="enginepower">Moc silnika:</label>
             <input type="text" name="power" id="enginepower" >
 
+            <p>Komunikacja z ECU silnika następuje?</p>
+
+            <label><input type="radio" name="ecucommunication" required> Tak</label>
+            <label><input type="radio" name="ecucommunication" required> Nie</label>
+            <label><input type="radio" name="ecucommunication" required> Inne</label>
             
-    
+
         </div>
 
         <div class="column">
 
-            <p>Możliwość nawiązania komunikacji z ECU silnika poprzez diagnoskop?</p>
-
-            <label><input type="radio" name="choise" required> Tak</label>
-            <label><input type="radio" name="choise" required> Nie</label>
-            <label><input type="radio" name="choise" required> Inne:</label>
-            
             <p>Silnik daje się uruchomić?</p>
 
-            <label><input type="radio" name="choise" required> Tak</label>
-            <label><input type="radio" name="choise" required> Nie</label>
-            <label><input type="radio" name="choise" required> Inne:</label>
+            <label><input type="radio" name="enginerun" required> Tak</label>
+            <label><input type="radio" name="enginerun" required> Nie</label>
+            <label><input type="radio" name="enginerun" required> Inne:</label>
     
-            <label for="message"> Inne:</label>
-            <textarea name="message" id="message"></textarea>
 
-            <label for="name">Imię:</label>
-            <input type="text" name="name" id="name" required>
+            <div class="column2">
+
+                <ul>
+                    <p>W poniższym oknie opisz usterkę</p>
+                    <br>
+                    <li>Kody błędów jakie generuje komputer</li>
+                    <li>Okoliczności awarii</li>
+                    <li>Wykonane już czynności diagnostyczne</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>                
+            
     
            
             <br>
             <label for="message">Wiadomość: </label>
             <textarea name="message" id="message"></textarea>
+
+            <br>
+
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">Zapoznałem się z regulaminem usług i zgadzam się na warunki w nim zawarte</label>
     
         </div>
 
@@ -104,9 +115,9 @@
         <br>
         <br>
 
-            <input type="checkbox" id="agreement" name="agreement" required>
-            <label for="agreement">Zapoznałem się z regulaminem usług i zgadzam się na warunki w nim zawarte</label>
             
+            
+
             <br>
             <input type="submit" value="Send">
         
