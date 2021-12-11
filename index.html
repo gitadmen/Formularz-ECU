@@ -70,7 +70,12 @@
 
             <label><input type="radio" name="ecucommunication" required> Tak</label>
             <label><input type="radio" name="ecucommunication" required> Nie</label>
-            <label><input type="radio" name="ecucommunication" required> Inne</label>
+            <label><input type="radio" name="ecucommunication" required> Inne (Opisz)</label>
+            <br>
+            <br>
+            <br>
+
+            
             
 
         </div>
@@ -81,19 +86,17 @@
 
             <label><input type="radio" name="enginerun" required> Tak</label>
             <label><input type="radio" name="enginerun" required> Nie</label>
-            <label><input type="radio" name="enginerun" required> Inne:</label>
+            <label><input type="radio" name="enginerun" required> Inne (Opisz)</label>
     
 
             <div class="column2">
+                <p>W poniższym oknie opisz usterkę, oraz:</p>
 
                 <ul>
-                    <p>W poniższym oknie opisz usterkę</p>
-                    <br>
                     <li>Kody błędów jakie generuje komputer</li>
                     <li>Okoliczności awarii</li>
                     <li>Wykonane już czynności diagnostyczne</li>
-                    <li></li>
-                    <li></li>
+                    <li>Inne informacje i uwagi mogące być pomoce</li>
                 </ul>
 
             </div>                
@@ -101,8 +104,8 @@
     
            
             <br>
-            <label for="message">Wiadomość: </label>
-            <textarea name="message" id="message"></textarea>
+            <label for="description">Wiadomość: </label>
+            <textarea name="description" id="description"></textarea>
 
             <br>
 
@@ -111,16 +114,14 @@
     
         </div>
 
-        <br>
-        <br>
-        <br>
+        <div class="sendbuttons">
 
-            
-            
-
+            <input type="submit" value="Przesyłam tylko formularz na email, a sterownik nadam we własnym zakresie">
             <br>
-            <input type="submit" value="Send">
+            <br>
+            <input type="submit" value="Przesyłam tylko formularz na email, a sterownik nadam we własnym zakresie">
         
+        </div>
     </form>
 </body>
 
